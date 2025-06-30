@@ -1,0 +1,15 @@
+.rifts-sheet {
+  font-family: sans-serif;
+  padding: 10px;
+}
+.rifts-sheet h1, h2 {
+  margin: 0 0 5px 0;
+}
+.rifts-sheet label {
+  display: block;
+  margin-bottom: 4px;
+}
+input[type="text"], input[type="number"], textarea {
+  width: 100%;
+  margin-bottom: 6px;
+}

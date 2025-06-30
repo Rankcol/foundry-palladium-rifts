@@ -1,0 +1,40 @@
+<form class="rifts-sheet" autocomplete="off">
+  <div class="sheet-header">
+    <h1><input name="name" value="{{actor.name}}" /></h1>
+    <input name="data.type" value="{{data.type}}" placeholder="Race/OCC/RCC" />
+    <input name="data.level" type="number" value="{{data.level}}" />
+  </div>
+
+  <section class="stats">
+    <h2>Attributes</h2>
+    {{#each data.stats}}
+      <label>{{@key}}: <input type="number" name="data.stats.{{@key}}" value="{{this}}" /></label>
+    {{/each}}
+  </section>
+
+  <section class="combat">
+    <h2>Combat</h2>
+    <label>HP: <input type="number" name="data.combat.hp" value="{{data.combat.hp}}" /></label>
+    <label>MDC: <input type="number" name="data.combat.mdc" value="{{data.combat.mdc}}" /></label>
+    <label>SDC: <input type="number" name="data.combat.sdc" value="{{data.combat.sdc}}" /></label>
+    <label>Armor: <input name="data.combat.armor" value="{{data.combat.armor}}" /></label>
+  </section>
+
+  <section class="skills">
+    <h2>Skills</h2>
+    <textarea name="data.skills.occ">{{data.skills.occ}}</textarea>
+    <textarea name="data.skills.secondary">{{data.skills.secondary}}</textarea>
+  </section>
+
+  <section class="powers">
+    <h2>Psionics & Magic</h2>
+    <label>ISP: <input type="number" name="data.psionics.maxISP" value="{{data.psionics.maxISP}}" /></label>
+    <label>PPE: <input type="number" name="data.magic.maxPPE" value="{{data.magic.maxPPE}}" /></label>
+    <textarea name="data.magic.spells">{{data.magic.spells}}</textarea>
+  </section>
+
+  <section class="gear">
+    <h2>Gear</h2>
+    <textarea name="data.gear.notes">{{data.gear.notes}}</textarea>
+  </section>
+</form>

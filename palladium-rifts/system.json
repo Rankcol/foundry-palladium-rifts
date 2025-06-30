@@ -1,0 +1,11 @@
+{
+  "id": "palladium-rifts",
+  "title": "Palladium RIFTS",
+  "description": "Custom implementation of Palladium RIFTS for Foundry VTT",
+  "version": "0.1.0",
+  "author": "ChatGPT",
+  "esmodules": ["module/palladium-rifts.js"],
+  "styles": ["css/palladium-rifts.css"],
+  "minimumCoreVersion": "10",
+  "compatibleCoreVersion": "11",
+}
